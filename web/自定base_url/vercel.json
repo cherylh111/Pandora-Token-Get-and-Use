@@ -1,10 +1,13 @@
 {
-  "name": "pandora-cloud",
-  "version": 2,
-  "framework": null,
   "functions": {
     "app.py": {
       "runtime": "python3.8"
     }
-  }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/app.py"
+    }
+  ]
 }
