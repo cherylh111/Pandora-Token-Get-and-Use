@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    with open('index.html', 'r') as file:
+    with open('i.html', 'r') as file:
         return file.read()
 
 @app.route('/get_tokens', methods=['POST'])
